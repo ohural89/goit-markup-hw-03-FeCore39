@@ -11,6 +11,18 @@
     --titles-color: rgba(33, 33, 33, 1);
     --text-color: rgba(117, 117, 117, 1);
 }
+/* POSITIONING */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* END POSITIONING */
 
 /* RESET STYLES */
 body {
@@ -22,6 +34,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -29,23 +43,28 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    color: var(--titles-color);
+h6,
+p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .btn {
     cursor: pointer;
     border: none;
 }
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
 /* END RESET STYLES */
+
+/* COMPONENTS */
 
 /* HOVER FOCUS CURRENT */
 .nav-link .current {
@@ -62,6 +81,16 @@ h6 {
     color: var(--spec-accent-color);
 }
 /* END HOVER FOCUS CURRENT */
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/* END COMPONENTS */
 
 /* LOGOTYPE */
 .logo {
@@ -114,6 +143,7 @@ h6 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--norm-accent-color);
+    margin: 0;
 }
 
 .hero-btn-style {
@@ -138,6 +168,25 @@ h6 {
 }
 /* END HERO */
 
+/* TITLES TEXT STYLE */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    /*line-height: 42px; */
+    text-align: center;
+    color: var(--titles-color);
+}
+
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    /*line-height: 42px; */
+    text-align: center;
+}
+/* END TITLES TEXT STYLE */
+
 /* FEATURES */
 .features-suptitle {
     font-weight: 700;
@@ -156,26 +205,12 @@ h6 {
 /* END FEATURES */
 
 /* WHAT WE DO */
-.what-we-do-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    /*line-height: 42px; */
-    text-align: center;
-}
+
 /* END WHAT WE DO */
 
 /* OUR TEAM */
 .our-team {
     background-color: var(--spec-bg-color);
-}
-
-.our-team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    /*line-height: 42px; */
-    text-align: center;
 }
 
 .our-team-suptitle {
