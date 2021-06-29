@@ -70,6 +70,10 @@ p {
     padding-bottom: 94px;
 }
 
+.features-section {
+    padding-bottom: 47px;
+}
+
 .footer-section {
     padding: 60px 0;
 }
@@ -214,7 +218,7 @@ p {
 /* HERO */
 .hero-section {
     background-color: var(--footer-bg);
-    padding: 200px 452px;
+    padding: 200px 0;
 }
 
 .hero-wrap {
@@ -349,7 +353,7 @@ p {
     /*line-height: 24px; */
 }
 .address-item:not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-address {
